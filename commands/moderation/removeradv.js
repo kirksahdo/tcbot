@@ -50,7 +50,7 @@ module.exports = {
             .setFooter('Atenciosamente, ' + message.guild.name, message.guild.iconURL());
 
         const channel = message.guild.channels.cache.find(channel => channel.id == adv_chat_id);
-        //channel.send(exampleEmbed);
+        channel.send(exampleEmbed);
         message.reply("advertência(s) removida(s) com sucesso!");
         message.channel
             message.delete();
