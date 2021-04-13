@@ -48,7 +48,7 @@ module.exports = {
 
         if(qtdAdv == 3){
             exampleEmbed = new Discord.MessageEmbed()
-            .setColor('#0099ff')
+            .setColor('#8b008b')
             .setTitle(':no_entry:  Novo banimento registrado :no_entry:')
             .addFields(
                 { name: 'Usuário:', value: userPunned },

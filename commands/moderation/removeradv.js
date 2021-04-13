@@ -38,7 +38,7 @@ module.exports = {
         }
 
         const exampleEmbed = new Discord.MessageEmbed()
-            .setColor('#0099ff')
+            .setColor('#8b008b')
             .setTitle(':no_entry:  Advertências Removidas  :no_entry:')
             .addFields(
                 { name: 'Usuário:', value: userPunned },
