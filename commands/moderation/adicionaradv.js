@@ -60,7 +60,7 @@ module.exports = {
             .setFooter('Atenciosamente, ' + message.guild.name, message.guild.iconURL());
         }else{
             exampleEmbed = new Discord.MessageEmbed()
-            .setColor('#0099ff')
+            .setColor('#8b008b')
             .setTitle(':no_entry:  Nova advertência registrada  :no_entry:')
             .addFields(
                 { name: 'Usuário:', value: userPunned },
