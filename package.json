@@ -1,0 +1,15 @@
+{
+  "name": "tcbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "loader.js",
+  "scripts": {
+    "start": "node loader.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord": "^0.8.2",
+    "discord.js": "^12.5.3"
+  }
+}
