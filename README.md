@@ -1,3 +1,3 @@
 # TCBOT
 
-A simple Discord.JS Bot.
+A simple Discord.JS bot.
