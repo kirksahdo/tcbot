@@ -29,6 +29,30 @@ client.on('message', message => {
 	const commandName = args.shift().toLowerCase();
 
 
+	if(commandName == "criarfarm"){
+		let category = message.guild.channels.cache.find( cat => cat.id == '832030677645525013');
+
+		if(args.length != 1 && message.mentions.users.size != 1) return;
+
+		let member = message.mentions.users.first();
+		
+		let name = "";
+
+		
+		message.guild.channels.create(message.guild.member(member.id).nickname, "text")
+			.then(channel => {
+				channel.setParent(category.id);
+				channel.send("**Chat de farm do <@!" + member.id + ">\nTodas as informações e prints sobre o farm do mesmo devem ser postadas aqui.**")
+			}).catch(console.error);
+
+		message.delete();
+
+		return;
+
+	
+	}
+
+
 	const command = client.commands.get(commandName)
 		|| client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
 
