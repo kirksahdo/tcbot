@@ -4,12 +4,13 @@
   "description": "",
   "main": "loader.js",
   "scripts": {
-    "start": "node loader.js"
+    "start": "node ."
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "discord": "^0.8.2",
-    "discord.js": "^12.5.3"
+    "discord.js": "^12.5.3",
+    "heroku": "^7.52.0"
   }
 }
